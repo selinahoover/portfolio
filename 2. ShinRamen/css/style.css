@@ -1,0 +1,552 @@
+   @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i);
+body {background:#fff; color:#666666; font-family:"Ubuntu", sans-serif;}
+a {color:#ed1c24; transition:0.5s;}
+a:hover, a:active, a:focus{color:#ed1c24; outline:none; text-decoration:none;}
+p {padding: 0; margin: 0 0 30px 0;}
+h1, h2, h3, h4, h5, h6 {font-family:"Ubuntu",sans-serif; font-weight:400; margin:0 0 20px 0; padding:0;}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Prelaoder : 로딩 써클*/
+#preloader{position:fixed; top:0; left:0; width:80%; height:100%;
+  z-index:999; overflow:visible; background:#fff url("../img/preloader.svg")no-repeat center center;}
+
+/* Back to top button */
+.back-to-top {position:fixed; display:none; right:15px; bottom:15px; font-size:16px;
+  padding:6px 12px 9px 12px; border-radius:2px;
+  background:rgba(0, 0, 0, 0.2); color:#fff; transition: background 0.5s;}
+@media (max-width: 768px),(max-width: 992px){
+  .back-to-top {bottom: 15px;}
+  #testimonials .profile{margin-top: 40px;}
+  #hero .hero-logo{width: 100%; height: 100%; margin: 0;}
+}
+@media (max-width: 992px) {
+  #about .about-title{padding-top: 20px;}
+}
+.back-to-top:focus{background:rgba(0, 0, 0, 0.2); color:#fff; outline:none;}
+.back-to-top:hover{background:#ed1c24; color:#fff;}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Hero Section : background mp4*/
+.vid{width: 70%; height: 70%; opacity: 0.9;}
+.vid video{width: 100%;}
+
+#hero {display:table; width:100%; height:100%;}
+.hero-container .hero-logo {margin:50px auto;}
+#hero .hero-logo img {max-width:100%;}
+#hero .hero-container {display:table-cell; margin:0; padding:0;
+  vertical-align:middle; text-align:center; background:rgba(0, 0, 0, 0.8);}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Header Section : logo+nav메뉴(+@media) */
+#header {background: #111; padding: 20px 0; height: 90px;}
+#header #logo {float: left;}
+#header #logo img {padding: 0; margin: 0; max-height: 50px;}
+@media (max-width: 768px) {#header {height: 80px;}
+  #header #logo img {max-height: 40px;}}
+.is-sticky #header {background: rgba(0, 0, 0, 0.85);}
+
+  /* (Navigation Menu) */
+.nav-menu, .nav-menu * {
+  margin: 0; padding: 0; list-style: none;
+}
+.nav-menu ul {
+  position: absolute; display: none;
+  top: 100%; left: 0; z-index: 99;
+}
+.nav-menu li {
+  position: relative; white-space: nowrap;
+}
+.nav-menu > li {float: left;}
+.nav-menu li:hover > ul,.nav-menu li.sfHover > ul {display: block;}
+.nav-menu ul ul {
+  top: 0; left: 100%;
+}
+.nav-menu ul li {
+  min-width: 180px;
+}
+   /* (Nav Menu Arrows) */
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal; font-weight: normal;
+}
+.sf-arrows ul .sf-with-ul:after {content: "\f105";}
+     /* (Nav Meu Container) */
+#nav-menu-container {
+  float: right; margin: 5px 0;
+}
+@media (max-width: 1200px) {
+  #nav-menu-container {display: none;}}
+     /* (Nav Meu Styling) */
+.nav-menu a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;   outline: none;
+  font-family: 'Raleway', sans-serif; font-weight: 300; font-size: 15px;
+}
+.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+  color: #ed1c24;
+}
+.nav-menu ul {
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+.nav-menu ul li {
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+}
+.nav-menu ul li:first-child {border-top: 0;}
+.nav-menu ul li:hover {background: #f6f6f6;}
+.nav-menu ul li a {color: #333;}
+.nav-menu ul ul {margin: 0;}
+  /* (Mobile Nav Toggle) */
+#mobile-nav-toggle {
+  position: fixed;
+  display: none;
+  right: 0; top: 0;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none; z-index: 999;
+}
+#mobile-nav-toggle i {color: #fff;}
+@media (max-width: 1200px) {#mobile-nav-toggle {
+    display: inline;}}
+
+    /* (Mobile Nav Styling) */
+#mobile-nav {
+  position: fixed;
+  width: 260px; left: -260px;
+  top: 0;  bottom: 0;
+  padding-top: 18px;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 998;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+#mobile-nav ul {
+  padding: 0; margin: 0;
+  list-style: none;
+}
+#mobile-nav ul li {position: relative;}
+#mobile-nav ul li a {
+  position: relative;   width: 100%;
+  display: block;
+  padding: 10px 22px 10px 15px;
+  font-size: 16px; color: #fff; text-decoration: none;
+  overflow: hidden;
+  outline: none;
+}
+#mobile-nav ul li a:hover {color: #ed1c24;}
+#mobile-nav ul li li {padding-left: 30px;}
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;  padding: 15px;
+  color: #fff; z-index: 99;
+  cursor: pointer;
+}
+#mobile-nav ul .menu-has-children i.fa-chevron-up {color: #ed1c24;}
+#mobile-nav ul .menu-item-active {color: #ed1c24;}
+#mobile-body-overly {
+  display: none;
+  position: fixed;
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 997;
+}
+    /* (Mobile Nav body classes) */
+body.mobile-nav-active {overflow: hidden;}
+body.mobile-nav-active #mobile-nav {left: 0;}
+body.mobile-nav-active #mobile-nav-toggle {color: #fff;}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* About Section : 메뉴ch2.Brand Story */
+ .section-title {       /*메인 제목글 */
+  font-size: 32px; font-weight: 700; color: #111;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-description {    /*메인 제목 밑에 소개글 */
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-title-divider {    /*메인 제목글 밑에 경계선 */
+  width: 50px; height: 3px;
+  background: #ed1c24;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+#about {            /* 메뉴ch2 전체 영역 */
+  background: #fff;
+  padding: 80px 0;
+}
+#about .about-content {background: #fff;}    /* 메뉴ch2 우측 문단 전체 영역 */
+#about .about-title {                       /* 메뉴ch2 우측 문단 제목 */
+  font-size: 28px; font-weight: 700; color: #333;
+}
+#about .about-text {line-height: 26px;}       /* 메뉴ch2 우측 문단 글 */
+#about .about-text:last-child {margin-bottom: 0;}
+
+/* swiper autoplay */
+.swiper-container {
+  height: 348px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-slide:nth-of-type(1){
+  background: url(../img/shinramyun_b.jpg);background-size: cover;}
+.swiper-slide:nth-of-type(2){
+  background: url(../img/shinramyun_s.png);background-size: cover;}
+.swiper-slide:nth-of-type(3){
+  background: url(../img/shinramyun_m.jpg);background-size: cover;}
+.swiper-slide:nth-of-type(4){
+  background: url(../img/shinramyun_m2.jpg);background-size: cover;}
+.swiper-slide:nth-of-type(5){
+  background: url(../img/shinramyun_w.jpg);background-size: cover;}
+
+.swiper-pagination-bullet-active{background: #ed1c24;}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+  background-image: none; height: auto;}
+[class*=swiper-button-] i{font-size: 2em; color:#ed1c24;}
+.swiper-button-next, .swiper-button-prev{width: 18px;}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Services Section : 메뉴ch3. Shin Ramen in the World */
+#services {     /* 메뉴ch3 전체영역 */
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+              url("../img/shin_world_map.png") fixed center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 80px 0 60px 0;
+}
+#services .service-item { /* 각 나라별 섹션영역 */
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 2px;
+}
+#services .rotate, #services .back {   /* 국기,국가이름 영역 */
+  position: absolute;
+  width: 60px; height: 60px;
+  float: left;
+  background: #777;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+#services .service-item:hover .rotate{
+  background: none;
+}
+
+#services .back{background: #000;}
+#services .rotate img, #services .back a{   /* 국기 이미지,국가이름 글씨 */
+  position: absolute;
+  width: 34px; top: 50%; left: 50%;
+  transform: translate(-50%,-50%)
+}
+#services .back a{          /* 각 국가이름(클릭링크) */
+   letter-spacing: -1px;
+   margin: auto;
+   width: 100%;
+   text-align: center;
+   color: #fff;
+}
+#services .rotate img, #services .rotate a{
+  /* 상속을 안하기위해 초기화시킴 */
+  max-width: initial;
+}
+#services .rotate > *{
+  /* 뒤집어졌을때 숨기기 */
+  backface-visibility: hidden;
+  transition: all 0.5s;
+  position: absolute; top: 50%; left: 50%;
+}
+#services .rotate .front {transform: translate(-50%,-50%) rotateY(0deg);}
+#services .rotate .back {transform: translate(-50%,-50%) rotateY(180deg);}
+#services .service-item:hover .front {transform: translate(-50%,-50%) rotateY(180deg);transition: all 1s;}
+#services .service-item:hover .back {transform: translate(-50%,-50%) rotateY(0deg);transition: all 1s;}
+
+#services .service-description {      /* 각 설명<p> */
+  margin-left: 80px;
+  line-height: 24px;
+}
+#services .service-item .service-description{  /* 나라별 각 설명<p> */
+  margin-left: 80px;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Subscrbe Section : 중간 광고영역 Shinraman Black */
+#subscribe {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url(../img/112.jpg) fixed center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+#subscribe .subscribe-title {
+  font-size: 30px; font-weight: 700; color: #fff;
+}
+#subscribe .subscribe-text {
+  font-size: 17px; color: #fff;
+}
+#subscribe .subscribe-btn-container {
+  text-align: center;
+  padding-top: 20px;
+}
+#subscribe .subscribe-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 20px;
+  font-family: "Raleway", sans-serif; color: #fff;
+  font-size: 16px; font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+#subscribe .subscribe-btn:hover {
+  background: #ed1c24;
+  border: 2px solid #ed1c24;
+  font-size: 1.6em;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Porfolio Section : 메뉴ch4.Recipe */
+#portfolio {background: #fff;
+  padding: 80px 0;
+}
+#portfolio .portfolio-item {
+  position: relative;
+  width: 100%; height: 260px; margin-bottom: 30px;
+  display: table;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#portfolio .portfolio-item .details {
+  display: table-cell;
+  height: 260px;
+  background: #fff; opacity: 0;
+  vertical-align: middle;
+  text-align: center;
+  transition: 0.3s;
+}
+#portfolio .portfolio-item .details h4 {
+  font-size: 20px; font-weight: 700; color: #333333;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+}
+#portfolio .portfolio-item .details span {
+  display: block;
+  font-size: 15px; color: #666666;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
+}
+#portfolio .portfolio-item:hover .details {opacity: 0.8;}
+#portfolio .portfolio-item:hover .details h4 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+#portfolio .portfolio-item:hover .details span {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Team Section : 메뉴ch5.Adviser chef */
+#team {background: #fff;        /*메뉴ch5 전체영역*/
+  padding: 80px 0 60px 0;
+}
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#team .member .pic {            /*셰프이미지 영역*/
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+#team .member .pic img {        /*셰프이미지*/
+  width: 217px;
+}
+#team .member .pic img:hover{    /*셰프이미지 호버시 사이즈확대*/
+  width: 250px;
+  transition: all 1s;
+}
+#team .member:hover h4{         /*셰프이미지 호버시 글씨 바꾸기*/
+  color: #000;
+}
+#team .member h4 {              /*셰프이미지 밑에 이름*/
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+#team .member span {            /*셰프이름 밑에 설명*/
+  display: block;
+  font-size: 13px; font-style: italic;
+}
+#team .member .social {          /*셰프이미지 밑에 소셜아이콘 영역*/
+  margin-top: 15px;
+}
+#team .member .social a {       /*셰프이미지 밑에 소셜 각 아이콘 영역*/
+  color: #b3b3b3;
+}
+#team .member .social a:hover {    /*소셜 각 아이콘 영역 호버시 색상바꾸기*/
+  color: #ed1c24;
+  transition: all 1s;
+}
+#team .member .social i {        /*셰프이미지 밑에 소셜 각 아이콘*/
+  font-size: 22px;
+  margin: 0 2px;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Testimonials Section  : 메뉴ch6. News & Events */
+#testimonials {
+  background: #ccc;
+  padding: 80px 0;
+}
+ #testimonials .profile {  /* 동그라미 큰영역 */
+  text-align: center;
+}
+#testimonials .profile .pic {   /* 동그라미 이미지 영역 */
+  width: 260px;
+  height: 260px;
+  border-radius: 50%; border: 6px solid #fff;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%; border: 6px solid #fff;
+}
+#testimonials .profile .pic img {   /* 동그라미 이미지 */
+  position: relative;
+  right: 55px;
+  /* max-width: 100%; */
+  max-height: 100%;
+}
+#testimonials .profile:hover h4{
+  color: #000;
+  font-weight: 700;
+}
+#testimonials .profile h4 {    /* 동그라미 이미지 하단 글씨 */
+  color: #333;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+#testimonials .profile span {    /* 동그라미 이미지 하단 글씨 */
+  color: #333;
+}
+#testimonials .quote {    /* 직사각 textbox 영역 */
+  position: relative;
+  padding: 60px;
+  margin-top: 40px;
+  font-size: 16px; font-style: italic;
+  border-radius: 5px;
+  background: #fff;
+  color:#c2c2c2;
+}
+#testimonials .quote:hover{
+  color: #000;
+  /* font-size: 1.2em;
+  font-weight: 500; */
+}
+#testimonials .quote b {    /* 직사각 textbox 따옴표이미지영역 */
+  position: relative;
+  top: -8px; left: -9px;
+  display: inline-block;
+  font-size: 22px;
+}
+#testimonials .quote small {    * 직사각 textbox 따옴표이미지영역 */
+  position: relative;
+  top: 4px; right: -9px;
+  display: inline-block;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Contact Section : 계열사 */
+
+#familysite {width: 100%; margin: 0;padding: 0;}
+#familysite .c_brand_big{text-align: center;}
+#familysite .c_brand_big .wrap{overflow: hidden; display: inline-block;}
+#familysite .c_brand_big a{float: left; width: 50%; padding: 20px 0;}
+#familysite .c_brand_big a span{display: inline-block; width: 163px; text-align: left;}
+@media (max-width:767px) {
+  #familysite .c_brand_big a{padding: 20px 0;}
+}
+@media (min-width:1200px) {
+  #familysite .c_brand_big a span{width: auto;}
+  #familysite .c_brand_big a{width: auto; padding: 20px 25px;}
+}
+
+#familysite .row{
+  display: flex;
+  flex-wrap:wrap;
+  height: 100%;
+  padding-top: 40px;
+}
+#familysite .c_brand_small{
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  /* padding: 100px 0; */
+
+  text-align: center;
+  overflow: hidden;
+}
+#familysite .cbrand_item{
+  /* position: relative; */
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  /* margin-top: 10px; */
+  /* min-height: 1px; */
+  /* padding: 0 15px; */
+}
+.cbrand_item img{
+  /* position: absolute; */
+  /* height: 70%; */
+  /* width: 90%; */
+  /* padding: 10px; */
+  /* top: 50%; left: 50%; transform: translate(-50%,-50%); */
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* Footer */
+#footer {
+  background: #111;
+  padding: 30px 0;
+  color: #fff;
+}
+#footer .copyright {
+  text-align: center;
+}
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+}
