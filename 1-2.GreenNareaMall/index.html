@@ -1,0 +1,966 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>그린나래몰</title>
+	<!-- 파비콘 넣기 -->
+	<link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- Google Font -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,300,500,700,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" type="text/css"> -->
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- Theme Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="social pull-left">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="action pull-right">
+                        <ul>
+                            <li><a href=""><i class="fas fa-user"></i> 로그인</a></li>
+                            <li><a href=""><i class="fas fa-lock"></i> 회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Orani E-shop">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-5">
+                    <div class="search-form">
+                        <form class="navbar-form" role="search">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="검색어를 입력하세요...">
+                            </div>
+                            <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <div class="cart">
+                        <div class="cart-icon">
+                            <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                        </div>
+                        <div class="cart-text">
+                            장바구니<br>0 품목 - 0원
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <nav class="navbar navbar-theme">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="shop-category nav navbar-nav navbar-left">
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-shop-category dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Shop By Category <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="">스킨케어</a></li>
+                    <li><a href="">퍼퓸/디퓨져</a></li>
+                    <li><a href="">악세서리</a></li>
+										<li><a href="">가죽공예품</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">세일</a></li>
+                    <li><a href="">이벤트</a></li>
+                  </ul>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li id="home"><a href="#">Home</a></li>
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">구매가이드</a></li>
+                <li><a href="#">베스트셀러</a></li>
+                <li><a href="#">반짝특가</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">고객센터</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <div class="slider big-slider">
+                        <div id="featured" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#featured" data-slide-to="0" class="active"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active" style="background-image:url('images/img-resizing/big-slider750x390/skincare/skincare01.jpg')">
+                               <div class="carousel-caption box1">
+                                    <h4>특가세일 30%</h4>
+                                    <h2 class="raleway">신상품 <span>2018</span></h2>
+                                    <a href="" class="btn btn-theme">바로가기</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="slider small-slider">
+                        <div id="small-featured" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#small-featured" data-slide-to="0" class="active"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active" style="background-image:url('images/img-resizing/small-slider360x390/skincare/skincare01.jpg')">
+                               <div class="carousel-caption box2">
+                                    <h3>베스트셀러</h3>
+                                    <p>공동구매</p>
+                                    <a href="" class="btn btn-theme">바로가기</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-banner" style="background-image:url('images/img-resizing/xsmall-slider360x236/skincare/skincare02.jpg')">
+                       <div class="banner-caption">
+                            <h3>스킨케어</h3>
+                            <a href="" class="btn btn-theme">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-banner" style="background-image:url('images/img-resizing/xsmall-slider360x236/perfume/perfume03.jpg')">
+                       <div class="banner-caption">
+                            <h3>퍼품/디퓨져</h3>
+                            <a href="" class="btn btn-theme">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-banner" style="background-image:url('images/img-resizing/xsmall-slider360x236/store/store03.jpg')">
+                       <div class="banner-caption last">
+                            <h3>매장할인%</h3>
+                            <a href="" class="btn btn-theme">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shopping-process text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                   <div class="single-process">
+                        <i class="fa fa-check"></i>
+                        <h3>제품 선택</h3>
+                        <p>제품군, 세일제품, 공동구매, 베스트셀러 각 카테고리에 다양한 상품들이 있습니다. 꼼꼼히 비교해 보시고 원하시는 제품을 선택하세요. </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                   <div class="single-process">
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <h3>장바구니에 담기</h3>
+                        <p>각 제품 페이지마다 장바구니 버튼이 있습니다. 버튼을 클릭하시면 해당 제품이 고객님의 장바구니에 추가됩니다.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                   <div class="single-process">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>주문하기</h3>
+                        <p>다양한 결제 방법이 제시되어 있으니 원하시는 방법으로 주문을 완료하세요.<br>(결제전, 적립된 마일리지와 보유한 쿠폰 확인을 잊지마세요!) </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                   <div class="single-process">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>배송</h3>
+                        <p>국내 전국 배송은 물론, 해외 해운 선박 운송도 가능합니다. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="featured-items">
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-tabs nav-product-tabs">
+                    <li class="active"><a href="#trending" data-toggle="tab">Best Seller</a></li>
+                    <li><a href="#best-seller" data-toggle="tab">Trending Items</a></li>
+                    <li class="pull-right collection-url"><a href="">더보기 <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="trending">
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/skincare/skincare04.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">수분+영양+윤광코팅 바이오 광채 해수 미스트</p>
+                                        <p class="price"> 14,500원(100ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/skincare/skincare08.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">수분장벽 UP 바이오 비타민 A+C+E<br>토너</p>
+                                        <p class="price">28,000원(300ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/skincare/skincare09.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">피부 강화 꿀벌 그린 프로폴리스 <br>에센스</p>
+                                        <p class="price">29,000원(50ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/skincare/skincare14.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">저자극 피부결 미백관리 바이오 필링 <br>오렌지 에센스</p>
+                                        <p class="price">43,000원(30ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/perfume/perfume04.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">천연에센셜오일 아로마 오리지널 디퓨저</p>
+                                        <p class="price">18,900원(130ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/perfume/perfume09.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">프리지아 센트 써라운드 디퓨저</p>
+                                        <p class="price">22,000원(130ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/perfume/perfume11.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">포머그래니트 센트 써라운드 디퓨저</p>
+                                        <p class="price">29,000원(130ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/perfume/perfume13.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">제주 센트 피커 라이팅 디퓨저</p>
+                                        <p class="price">26,000원(110ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="best-seller">
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/leather/leather02.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[boxcalf] 키링</p>
+                                        <p class="price">25,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/leather/leather04.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[VEGETABLE SOLID] 카드지갑</p>
+                                        <p class="price">32,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/leather/leather06.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[Togo] 숄더백</p>
+                                        <p class="price">85,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/leather/leather07.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[boxcalf] 통장지갑</p>
+                                        <p class="price">45,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/leather/leather11.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[Shrunk] 통장지갑</p>
+                                        <p class="price">45,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/leather/leather13.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[Nubakh] 카드지갑</p>
+                                        <p class="price">39,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/leather/leather17.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[Bash] 토트백</p>
+                                        <p class="price">90,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/img-resizing/list257x390/leather/leather16.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[calf] 다용도함</p>
+                                        <p class="price">55,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popular-items">
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-tabs nav-product-tabs">
+                    <li class="active"><a href="#popular" data-toggle="tab">Special leather</a></li>
+                    <li><a href="#special" data-toggle="tab">Popular</a></li>
+                    <li class="pull-right collection-url"><a href="">더보기 <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="popular">
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-16.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[VEGETABLE SOLID] 카드지갑</p>
+                                        <p class="price">32,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-15.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[calf] 다용도함</p>
+                                        <p class="price">55,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-14.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[Shrunk] 통장지갑</p>
+                                        <p class="price">45,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-13.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[Togo] 숄더백</p>
+                                        <p class="price">85,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-12.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[Nubakh] 카드지갑</p>
+                                        <p class="price">39,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-11.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[boxcalf] 통장지갑</p>
+                                        <p class="price">45,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-10.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[Bash] 토트백</p>
+                                        <p class="price">90,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-9.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">[boxcalf] 키링</p>
+                                        <p class="price">25,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="special">
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-8.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">기초 보습 순한 제품 허브 달팽이 <br>스킨로션</p>
+                                        <p class="price">21,000원(120ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-7.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">모발 영양공급&두피관리 천연 카렌둘라 <br>샴푸</p>
+                                        <p class="price">23,800원(500ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-6.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">손상예방+피부강화 바이오 센텔라스카 <br>에멀전</p>
+                                        <p class="price">25,000원(130ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-5.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">건성/민감성 고보습+탄력관리 유기농 <br>아르간 100% 오일</p>
+                                        <p class="price">40,000원(30ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-4.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">에스파시아 써라운드 디퓨저</p>
+                                        <p class="price">20,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-3.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">하바플라리움 리드 디퓨져</p>
+                                        <p class="price">25,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-2.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">하바플라리움 리드 디퓨져</p>
+                                        <p class="price">26,000원</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="single-product">
+                                <div class="product-block">
+                                    <img src="images/product-1.jpg" alt="" class="thumbnail">
+                                    <div class="product-description text-center">
+                                        <p class="title">천연에센셜오일 아로마 오리지널 디퓨저</p>
+                                        <p class="price">18,900원(130ml)</p>
+                                    </div>
+                                    <div class="product-hover">
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>
+                                            <li><a href=""><i class="fas fa-arrows-alt-h"></i></a></li>
+                                            <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="blog-title">
+                    <h2 class="pull-left text-left">매장 블로그</h2>
+                    <a href="" class="pull-right text-right">전체보기 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-post">
+                        <div class="post-inner">
+                            <div class="post-thumbnail">
+                                <img src="images/img-resizing/blog360x360/store/store01.jpg" alt="">
+                                <div class="date">1호점</div>
+                                <a href="" class="read-more raleway">보러가기 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <h4 class="post-title">서울특별시 강남구 신사동 도산대로33길 <br> [tel.02-555-7777]</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                   <div class="single-post">
+                        <div class="post-inner">
+                            <div class="post-thumbnail">
+                                <img src="images/img-resizing/blog360x360/store/store02.jpg" alt="">
+                                <div class="date">2호점</div>
+                                <a href="" class="read-more raleway">보러가기 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <h4 class="post-title">서울특별시 강남구 삼성동 77-11 <br> [tel.02-555-9999] </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-post">
+                        <div class="post-inner">
+                            <div class="post-thumbnail">
+                                <img src="images/img-resizing/blog360x360/store/store03.jpg" alt="">
+                                <div class="date">3호점</div>
+                                <a href="" class="read-more raleway">보러가기 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <h4 class="post-title">서울특별시 서초구 서초동 1337-22 <br> [tel.02-555-2525]</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <div class="single-widget">
+                        <h2 class="widget-title">그린나래몰</h2>
+                        <div class="widget-inner">
+														<p>종로구 수표로 105</p>
+                            <p>82 123 4567</p>
+                            <p>(F) 82 4752 1499</p>
+                            <p>GN@greennarea.com</p>
+                            <img src="images/payment.png" alt="we accept">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="single-widget">
+                        <h2 class="widget-title">정보</h2>
+                        <div class="widget-inner">
+                            <ul>
+                                <li><a href="">자주 묻는 질문</a></li>
+																<li><a href="">Q&A</a></li>
+                                <li><a href="">이용 약관</a></li>
+                                <li><a href="">개인 정보 정책</a></li>
+                                <li><a href="">고객 서비스</a></li>
+                                <li><a href="">배달 정보</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="single-widget">
+                        <h2 class="widget-title">고객 지원</h2>
+                        <div class="widget-inner">
+                            <ul>
+                                <li><a href="">연락처</a></li>
+                                <li><a href="">사이트 맵</a></li>
+                                <li><a href="">상품권</a></li>
+                                <li><a href="">연중 무휴 24 시간 라이브 채팅</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="single-widget">
+                        <h2 class="widget-title">국제 서비스</h2>
+                        <div class="widget-inner">
+                            <ul>
+                                <li><a href="">국제 배송</a></li>
+                                <li><a href="">안전한 쇼핑</a></li>
+                                <li><a href="">배송 및 반품</a></li>
+                                <li><a href="">제휴사</a></li>
+                                <li><a href="">담당자</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright text-center">
+        <div class="container">
+            <div class="row">
+                <p class="copyright"> copyright by <i class="fa fa-love"></i><a href="#">GREENNAREA</a></p>
+            </div>
+        </div>
+    </div>
+
+	<!-- jQuery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!-- Script -->
+	<script src="js/script.js"></script>
+</body>
+</html>
