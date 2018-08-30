@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GREEN NAREA</title>
+  <!-- 파비콘 넣기 -->
+  <link rel="shortcut icon" href="img/favi.png" type="image/x-icon">
+  <!-- 폰트 아이콘 - fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- 메인화면 Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+  <!-- javascript -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+ <div class="black_bg"></div>   <!-- 팝업용 장막 -->
+  <header>
+    <div class="center">
+      <!-- 로고 -->
+      <div id="logo">
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
+      </div>
+  <!--   header_1laye(회원가입/로그인/sns/언어변환) -->
+      <div class="header_rightbox">
+        <div class="header_1layer">
+          <div class="util-nav">
+            <div class="joinlogin_move">
+              <div id="join">
+                 <a href="#">회원가입</a>
+                 <!-- <a href="#" class="mypage">마이페이지</a> -->
+              </div>
+              <div id="login">
+                 <a href="#">로그인</a>
+                 <!-- <a href="#">로그아웃</a> -->
+              </div>
+            </div>
+            <div id="sns" class="toggle-area">
+               <a href="#"><i class="fas fa-share-alt"></i></a>
+               <ul class="sns_sub">
+                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                 <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+            </div>
+            <div id="language" class="toggle-area">
+               <a href="#"><i class="fas fa-globe-americas"></i></a>
+               <ul class="language_sub">
+                 <li><a href=""><img src="img/flag_korea.png" alt="koreaflag"></a></li>
+                 <li><a href=""><img src="img/flag_usa.png" alt="usaflag"></a></li>
+                 <li><a href=""><img src="img/flag_china.png" alt="chinaflag"></a></li>
+               </ul>
+            </div>
+          </div>
+        </div>
+    <!--   /header_1laye(회원가입/로그인/sns/언어변환)    -->
+    <!--    header_2laye(검색창/메뉴바)    -->
+        <div class="header_2layer">
+          <!-- 검색창 -->
+          <form class="search_bar">
+            <div class="search_dropdown">
+              <span>All</span>
+              <ul>
+                <li class="selected">All</li>
+                <li>SkinCare</li>
+                <li>Perfume/Diffuser</li>
+                <li>LeatherWorkshop</li>
+                <li>Accessories</li>
+              </ul>
+            </div>
+            <input type="text" placeholder="검색어를 입력하세요." />
+            <button type="submit" value="Search"><i class="fas fa-search"></i></button>
+          </form>
+          <!-- 메뉴버튼/닫기버튼(숨겨져 있다가 위 아이콘 클릭시 나옴) -->
+          <a href="#" class="btn-menu"><i class="fas fa-bars"><span class="skip">menu</span></i></a>
+
+          <!-- 메뉴(숨겨져 있다가 위 아이콘 클릭시 나옴) -->
+          <nav>
+              <div class="menu_header">
+                <img src="img/favi.png" alt="favicon">
+                <h2>로그인을 해주세요</h2>
+                <!-- <h2><img src="img/favi.png" alt="favicon">ooo님 반갑습니다.</h2> -->
+              </div>
+              <ul id="gnb-nav">
+                <li>
+                  <a href="#"><span>소개/이용방법</span><i class="fas fa-angle-down"></i></a>
+                  <ul class="depth2">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">그린나래 이용방법</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>스킨케어</span><i class="fas fa-angle-down"></i></a>
+                  <ul class="depth2">
+                    <li><a href="#">토너/미스트</a></li>
+                    <li><a href="#">에센스/세럼</a></li>
+                    <li><a href="#">클렌징/필링</a></li>
+                    <li><a href="#">바디/헤어</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>퍼퓸/디퓨져</span><i class="fas fa-angle-down"></i></a>
+                  <ul class="depth2">
+                    <li><a href="#">퍼퓸</a></li>
+                    <li><a href="#">디퓨져</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>가죽공방</span><i class="fas fa-angle-down"></i></a>
+                  <ul class="depth2">
+                    <li><a href="#">재료별</a></li>
+                    <li><a href="#">품목별</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>악세서리</span><i class="fas fa-angle-down"></i></a>
+                  <ul class="depth2">
+                    <li><a href="#">반지/팔찌</a></li>
+                    <li><a href="#">귀걸이/목걸이</a></li>
+                    <li><a href="#">헤어핀/참</a></li>
+                    <li><a href="#">기타</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>Sns/Event</span><i class="fas fa-angle-down"></i></a>
+                  <ul class="depth2">
+                    <li><a href="#">SNS</a></li>
+                    <li><a href="#">Event</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>고객센터</span><i class="fas fa-angle-down"></i></a>
+                  <ul class="depth2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자주묻는질문</a></li>
+                    <li><a href="#">Q&A</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>마이페이지</span><i class="fas fa-angle-down"></i></a>
+                  <ul class="depth2">
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">위시리스트</a></li>
+                    <li><a href="#">주문내역조회</a></li>
+                    <li><a href="#">정기배송관리</a></li>
+                    <li><a href="#">내정보</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </nav>
+          <!-- /메뉴 -->
+        </div>
+      </div>
+<!--    header_2laye(검색창/메뉴바)    -->
+    </div>
+<!--   / header    -->
+  </header>
+
+  <section class="main-content">
+    <!--    메인화면(mousewheel_swiper)    -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide layer1">
+            <img src="img/woman.png" usemap="#image-map">
+            <map name="image-map">
+                <area coords="126,183,145,186,142,202,122,201" shape="poly">
+                <area coords="182,255,207,254,237,263,272,254,265,281,220,285,198,274,177,278" shape="poly">
+                <area coords="256,305,224,346,184,354,235,390,272,431,338,499,436,499,427,394,380,364,330,367,269,338" shape="poly">
+                <area coords="91,251,178,257,163,327,163,411,96,404,109,305" shape="poly">
+            </map>
+            <!-- 스와이퍼 첫페이지 여자 이미지에 호버시 나타나는 말풍선 -->
+            <div class="speech_bubble">
+              <a href="#" class="bubble1"><img src="img/arrow.png" alt="arrow">악세서리</a>
+              <a href="#" class="bubble2"><img src="img/arrow.png" alt="arrow">스킨케어</a>
+              <a href="#" class="bubble3"><img src="img/arrow.png" alt="arrow">가죽공방</a>
+              <a href="#" class="bubble4"><img src="img/arrow.png" alt="arrow">퍼퓸/디퓨져</a>
+            </div>
+          </div>
+          <div class="swiper-slide layer2"></div>
+          <div class="swiper-slide layer3"></div>
+          <div class="swiper-slide layer4"></div>
+        </div>
+        <div class="swiper_wrap">
+          <!-- 페이지네이션 mousewheel_swiper Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- 자체제작 아이콘 (메인페이지에 fixed) -->
+          <div class="g_icon_wrap">
+            <div class="g_icon">
+              <a href="#phone_consultation"><img src="img/icon2_phone.png" alt="phoneicon"></a>
+              <a href="#email_consultation"><img src="img/icon2_mail.png" alt="mailicon"></a>
+              <a href="#sms_consultation"><img src="img/icon2_sms.png" alt="smsicon"></a>
+              <a href="#talk_consultation"><img src="img/icon2_talk.png" alt="talkicon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--  /메인화면(mousewheel_swiper)  -->
+  </section>
+
+  <footer>
+    <div class="center">
+      <!-- 로고/주소 -->
+      <div class="address">
+        <!-- <div class="address-img">
+          <img src="img/favi.png" alt="favicon">
+        </div> -->
+        <div class="address-sub">
+          <h2>(주)그린나래</h2>
+          <p>대표자:이수희<br>
+             서울시 종로구 수표로 105 육의전빌딩 8,9층
+             전화번호:02-123-4567 사업자등록번호:123-45-67890<br>
+             통신판매신고번호:2018-종로-1234호
+             개인정보관리책임자:신동민 tlsehdals@greennarea.co.kr<br>
+             coptright(c)2018GREENNAREA all rights reserved
+          </p>
+        </div>
+      </div>
+      <!-- sns 버튼모음 -->
+      <div class="middle">
+        <ul class="address_sns">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <ul class="site-info">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+      </div>
+      <div class="map">
+        <a href="#"><img src="img/greennarea_map.jpg" alt="map"></a>
+      </div>
+      <!-- 최하단 쇼핑몰이동영역 -->
+    </div>
+    <button id="store">
+      <span>스 토 어 &nbsp; 이 동</span>
+      <span>완제품 &nbsp; 바로구매</span>
+    </button>
+  </footer>
+
+
+<!-- 팝업창들 ===============================================================================================-->
+  <!-- 로그인 팝업 -->
+<div class="container">
+  <div class="popup_wrap">
+      <a href="#"><i class="fas fa-times">
+        <span class="skip">close</span></i></a>
+      <div class="text-center">
+        <img src="img/favi.png" alt="favicon">
+        <h2>로그인</h2>
+      </div>
+      <div class="row">
+        <div class="">
+            <form id="contact-form" class="form" action="#" method="POST" role="form">
+                <div class="form-group">
+                    <label class="form-label" for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" placeholder="아이디를 입력하세요" tabindex="1" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호를 입력하세요" tabindex="2" required>
+                </div>
+                <div class="form-group">
+                    <a href="#"><p>아이디/패스워드 찾기</p></a>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-start-order two">회원가입</button>
+                    <button type="submit" class="btn btn-start-order">로그인</button>
+                </div>
+                <div class="form-group">
+                    <p>아래 계정으로 로그인</p>
+                    <ul class="address_sns">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+      </div>
+  </div>
+</div>
+  <!-- /로그인 팝업 -->
+
+<!-- 회원가입 팝업 -->
+<div class="signup-form">
+  <div class="signup_bg">
+    <a href="#"><i class="fas fa-times">
+      <span class="skip">close</span></i></a>
+    <div class="text-center">
+      <img src="img/favi.png" alt="favicon">
+      <h2>회원가입</h2>
+    </div>
+    <form id="signup_form" action="#" >
+      <div class="row">
+        <label for="name2">이름</label>
+        <input type="text" placeholder="이름" id="name2">
+        <label for="gender">성별</label>
+        <input type="text" placeholder="성별" id="gender">
+        <a href=""><i class="fas fa-angle-down"></i></a>
+      </div>
+      <div class="row">
+        <label for="birth_year">생년</label>
+        <input type="text" placeholder="생년" id="birth_year">
+        <a href=""><i class="fas fa-angle-down"></i></a>
+        <label for="month">월</label>
+        <input type="text" placeholder="월" id="month">
+        <a href=""><i class="fas fa-angle-down"></i></a>
+        <label for="day">일</label>
+        <input type="text" placeholder="일" id="day">
+        <a href=""><i class="fas fa-angle-down"></i></a>
+      </div>
+      <div class="row">
+        <label for="mobile_service_provider">통신사</label>
+        <input type="text" placeholder="통신사" id="mobile_service_provider">
+        <a href=""><i class="fas fa-angle-down"></i></a>
+        <label for="mobile_phone_number">휴대폰번호</label>
+        <input type="tel" placeholder="휴대폰번호" id="mobile_phone_number">
+        <button type="submit" id="certification_number">인증번호전송</button>
+      </div>
+      <div class="row">
+        <label for="id2">아이디</label>
+        <input type="text" placeholder="아이디" id="id2">
+        <button type="submit" id="double_check">중복확인</button>
+      </div>
+      <div class="row">
+        <label for="password2">비밀번호</label>
+        <input type="password" placeholder="비밀번호" id="password2">
+      </div>
+      <div class="row">
+        <label for="password_check">비밀번호확인</label>
+        <input type="password" placeholder="비밀번호확인" id="password_check">
+      </div>
+        <p class="find-info">위 내용으로 가입하시겠습니까?</p>
+        <div class="line"></div>
+        <button type="submit" id="sign_up">가입하기</button>
+    </form>
+  </div>
+</div>
+<!-- / 회원가입 팝업 -->
+
+<!-- 제작아이콘 팝업 --------------------------------------------------------------->
+   <!-- 전화상담 팝업 -->
+<div class="phone_consultation consultation" id="phone_consultation">
+  <a href="#" class="btn-close"><i class="fas fa-times">
+    <span class="skip">close</span></i></a>
+  <div class="text-center">
+      <img src="img/icon_phone.png" alt="phone">
+      <h2>전화상담 &nbsp; 신청하기</h2>
+  </div>
+  <form id="phone_consultation" action="#">
+    <div class="row">
+      <label for="name3">이름</label>
+      <input type="text" placeholder="" id="name3">
+    </div>
+    <div class="row">
+      <label for="phone">연락처</label>
+      <input type="text" placeholder="국번" id="dialing">
+      <input type="text" placeholder="중간자리" id="middle">
+      <input type="text" placeholder="마지막자리" id="last">
+    </div>
+      <p class="find-info2">개인정보 수집동의
+        <label for="check">
+          <input type="checkbox" name="checkbox" id="check">
+          <i class="fas fa-check-circle"></i>
+        </label>
+      </p>
+      <button type="submit" id="Apply">상담신청하기</button>
+  </form>
+</div>
+
+  <!-- 이메일상담 팝업 -->
+<div class="email_consultation consultation" id="email_consultation">
+  <a href="#" class="btn-close"><i class="fas fa-times">
+    <span class="skip">close</span></i></a>
+  <div class="text-center">
+      <img src="img/icon_mail.png" alt="phone">
+      <h2>이메일&nbsp;상담&nbsp;신청하기</h2>
+  </div>
+  <form id="email_consultation" action="#">
+    <div class="row">
+      <label for="name4">이름</label>
+      <input type="text" placeholder="" id="name4">
+    </div>
+    <div class="row">
+      <label for="email">이메일</label>
+      <input type="email" placeholder="" id="email">
+    </div>
+    <div class="row">
+      <label for="text">상담내용</label>
+      <textarea></textarea>
+    </div>
+    <p class="find-info2">개인정보 수집동의
+      <label for="check2">
+        <input type="checkbox" name="checkbox" id="check2">
+        <i class="fas fa-check-circle"></i>
+      </label>
+    </p>
+    <button type="submit" id="Apply">상담신청하기</button>
+  </form>
+</div>
+
+  <!-- 문자상담 팝업 -->
+<div class="sms_consultation consultation" id="sms_consultation">
+  <a href="#" class="btn-close"><i class="fas fa-times">
+    <span class="skip">close</span></i></a>
+  <div class="text-center">
+      <img src="img/icon_sms.png" alt="phone">
+      <h2>문자&nbsp;상담&nbsp;신청하기</h2>
+  </div>
+  <form id="sms_form" action="#">
+    <div class="row">
+      <label for="name5">이름</label>
+      <input type="text" placeholder="" id="name5">
+    </div>
+    <div class="row">
+      <label for="phone">연락처</label>
+      <input type="text" placeholder="국번" id="dialing2">
+      <input type="text" placeholder="중간자리" id="middle2">
+      <input type="text" placeholder="마지막자리" id="last2">
+    </div>
+    <div class="row">
+      <label for="text">상담내용</label>
+      <textarea></textarea>
+    </div>
+    <p class="find-info2">개인정보 수집동의
+      <label for="check3">
+        <input type="checkbox" name="checkbox" id="check3">
+        <i class="fas fa-check-circle"></i>
+      </label>
+    </p>
+    <button type="submit" id="Apply">상담신청하기</button>
+  </form>
+</div>
+
+  <!-- 카카오톡상담 팝업 -->
+<div class="talk_consultation consultation" id="talk_consultation">
+  <a href="#" class="btn-close"><i class="fas fa-times">
+    <span class="skip">close</span></i></a>
+  <div class="text-center">
+      <img src="img/icon_talk.png" alt="phone">
+      <h2>카카오톡 &nbsp; 상담하기</h2>
+  </div>
+  <div class="talk_box">
+    <img src="img/greennarea_talk.jpg" alt="">
+  </div>
+      <p class="find-info2">검색창에 '그린나래'를 입력하세요.</p>
+      <button type="submit" id="Apply">상담신청하기</button>
+  </form>
+</div>
+
+  <!-- 지도 팝업 -->
+<div class="map_wrapper consultation">
+  <a href="#"><i class="fas fa-times">
+    <span class="skip">close</span></i></a>
+  <div class="text-center">
+      <img src="img/favi.png" alt="favicon">
+      <h2>그린나래 &nbsp; 오시는길</h2>
+  </div>
+  <div class="talk_box map_box">
+    <img src="img/greennarea_map.jpg" alt="">
+  </div>
+  <div class="car Transportation">
+    <span><i class="fas fa-car"></i></span>
+    <p class="find-info2">서울 종로구 수표로 105 육의전빌딩 8,9층</p>
+  </div>
+  <div class="train Transportation">
+    <span><i class="fas fa-train"></i></span>
+    <p class="find-info2">종로3가역 1번출구 100m<br>
+        종각역 11번출구 100m</p>
+  </div>
+  <div class="bus Transportation">
+    <span><i class="fas fa-bus"></i></span>
+    <p class="find-info2">종로3가 버스정류장 하차(01-194)<br>
+        101,103,1443,150,160,201,260,262,270,271,273,<br>
+        370,601,708,710,720,721<br>
+        의정부행 111,하남시행 9301</p>
+  </div>
+</div>
+
+</body>
+</html>
