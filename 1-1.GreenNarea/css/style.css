@@ -380,7 +380,7 @@ form input::-webkit-input-placeholder{color: #fff;} */
 .consultation input[type=checkbox]{display: none;}
 .consultation .find-info2 i{color:#c7c7c7; margin-left: 5px;}
 .consultation .find-info2 input[type=checkbox]:checked +i{color:#6b7331;}
-.consultation #Apply{width:260px; height:30px; font-size:20px; color:#fff; line-height:20px;
+.consultation #Apply1,.consultation #Apply2,.consultation #Apply3{width:260px; height:30px; font-size:20px; color:#fff; line-height:20px;
   transform:translateX(25%); background:#6b7331;
   border-right-color: #adbe64; border-bottom-color: #adbe64;
   border-left-color: #8fa63b; border-top-color: #8fa63b;}
