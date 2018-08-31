@@ -38,7 +38,7 @@
 
 				//공홈 이동
 		    $('#home').click(function(){
-		      document.location.href='../1-1. GreenNarea/index.html';
+		      document.location.href='../1-1.GreenNarea/index.html';
 		    // github에 올리면 주소바꾸기 ='http://selinahoover20/github.io/greennarea';
 		    })
 
