@@ -376,7 +376,7 @@ form input::-webkit-input-placeholder{color: #fff;} */
   margin-left:20px; line-height:30px; letter-spacing:-1px;}
 .consultation .row input{border:0; background:#adbe64; color:#6b7331; height:30px; line-height:30px; font-weight: bold;}
 .consultation .find-info2{font-size:15px; color:#6b7331; font-weight: bold;
-  text-align:center; line-height:15px;}
+  text-align:center; line-height:15px; margin-bottom: 5px;}
 .consultation input[type=checkbox]{display: none;}
 .consultation .find-info2 i{color:#c7c7c7; margin-left: 5px;}
 .consultation .find-info2 input[type=checkbox]:checked +i{color:#6b7331;}
