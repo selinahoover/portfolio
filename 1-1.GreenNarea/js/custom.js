@@ -1,7 +1,7 @@
 
  // header > Search bar ===========================================================
 var resizeElements;
-$(document).ready(function() {
+$(function() {
   // Set up common variables
   // --------------------------------------------------
   var bar = ".search_bar";
