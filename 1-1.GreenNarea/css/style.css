@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i);
 
 /*    Reset CSS  */
 * { margin:0;  padding:0;}
@@ -71,7 +71,7 @@ form {box-sizing: border-box;}
   border-radius: 2px 0 0 2px; box-sizing:content-box; z-index:10000;}
 .search_bar .search_dropdown:after {content: "\2193"; position:absolute; height:8px; width:10px;
   top:50%; right:10px; margin-top:-6px; color:rgba(85, 85, 85, 0);
-  background:url("http://media.lib.byu.edu/assets/images/searchbar/1.0/down-arrow.svg")no-repeat top left;}
+  background:url("https://media.lib.byu.edu/assets/images/searchbar/1.0/down-arrow.svg")no-repeat top left;}
 .search_bar .search_dropdown:hover, .search_bar .search_dropdown.active {
   border-right-color:#ccc; cursor: pointer; background:#fff;}
 .search_bar .search_dropdown > span {position:absolute; top:50%; margin-top:-8px;
