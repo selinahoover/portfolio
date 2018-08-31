@@ -36,7 +36,7 @@ form {box-sizing: border-box; margin: 0 auto; }
 .search_bar .search_dropdown {position:absolute; padding: 0 28px 0 13px; top:0; left:0; bottom:0; min-width:17px; font-weight: 400; color:#6b7332;
   border-radius: 2px 0 0 2px; box-sizing:content-box; z-index:10000; user-select:none;}
 .search_bar .search_dropdown:after {content: "\2193"; position:absolute; height:8px; width:10px; top:50%; right:10px; margin-top:-6px;
-  color:rgba(85, 85, 85, 0); background: url("http://media.lib.byu.edu/assets/images/searchbar/1.0/down-arrow.svg") no-repeat top left;}
+  color:rgba(85, 85, 85, 0); background: url("https://media.lib.byu.edu/assets/images/searchbar/1.0/down-arrow.svg") no-repeat top left;}
 .search_bar .search_dropdown:hover, .search_bar .search_dropdown.active {border-right-color:#ccc; cursor: pointer; background:#fff;}
 .search_bar .search_dropdown > span {position:absolute; top:50%; margin-top:-8px; font-size:15px; white-space: nowrap; line-height:17px;}
 .search_bar .search_dropdown ul {display:none; position:absolute; width:225px; top:105%; left:-1px; padding:7px 0;
